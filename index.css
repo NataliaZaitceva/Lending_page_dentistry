@@ -1,0 +1,46 @@
+.page {
+    max-width: 1280px;
+    
+    font-family: "Inter", "Arial", sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    background-color: #fff0f5;
+    justify-content: center;
+  }
+  
+  
+  
+  @media screen and (max-width: 320px) {
+    .page {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  .navigation__list {
+    max-width: 381px;
+    list-style: none;
+    height: 18px;
+    margin: 28px 70px 18px auto;
+    padding: 0;
+    display: flex;
+    font-size: 14px;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    color: #000000;
+  }
+
+  .header {
+ max-width: 100%;
+ justify-content: center;
+ text-align: center;
+  }
+
+  .navigation__link {
+    margin: 10px;
+  }
+
+  

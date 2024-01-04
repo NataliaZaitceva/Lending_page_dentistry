@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./index.css" type="text/css">
+
+    <title>Стоматологическая клиника Савостьяновых в Свободном</title>
+</head>
+
+<body class="page">
+
+    <header class="header">
+        <div class="header-logo"></div>
+        <ul class="navigation navigation__list">
+            <li class="navigation__link">Услуги</li>
+            <li class="navigation__link">Сведения о медицинской организации</li>
+            <li class="navigation__link">Контакты</li>
+        </ul>
+
+    </header>
+    <main class="main">
+
+        <div class="main__info">
+            <h2 class="main__info_subtitle">г. Свободный, ул. Дзержинского, 35</h2>
+            <h2 class="main__info_subtitle">телефон</h2>
+            <h1 class="main__info_title">Стоматологическая клиника Савостьяновых</h1>
+</div>
+<div class="services">
+ <h3 class="services__title">Услуги</h3>
+ <div></div>
+
+</div>
+            <div class="about__info-list">
+            <h2 class="about__subtitle">Наши преимущества</h2>
+
+            <ul class="about__info-list">
+                <li class="about__info-text">Лицензия на все виды лечебной деятельности нашего медицинского центра </li>
+                <li class="about__info-text">Составление договора на все виды услуг, которые оказываются в медицинском центре</li>
+                <li class="about__info-text">Полноценная комплексная стоматологическая диагностика перед началом лечения
+                </li>
+                <li class="about__info-text">Работа на современном оборудовании, применение только сертифицированных расходных материалов от ведущих европейских фирм-производителей, при обязательном строгом соблюдении технологий их применения</li>
+                <li class="about__info-text">Высокий уровень подготовки персонала</li>
+                <li class="about__info-text">Обеспечение максимального комфорта для пациента во врачебных кабинетах</li>
+
+            </ul>
+        </div>
+        <img class="about__background" src="./src/image/background2.jpg" alt="meat"> </div>
+        <popup class="popup" id="popupcontainer">
+
+            <div class="popup__container">
+                
+                <form class="popup__form" id="form" method="post" type="submit" novalidate>
+<h2 class="popup__title">Заполните форму</h2>
+                    <div class="popup__form_block">
+                        <label for="formSubject" class="popup__form_label">Тема сообщения</label>
+                        <input class="popup__form-input" type="text" id="formSubject" name="subject" minlength="2" maxlength="30" required>
+                   <span class="error" id="subjest-error"></span>
+                    </div>
+
+                    <div class="popup__form_block"></label>
+                        <label for="formName" class="popup__form_label" >Введите свое имя</label>
+
+                        <input class="popup__form-input _req" type="text" id="formName" name='name' minlength="2" maxlength="30" required>
+                        <span class="error" id="formName-error"></span>
+                    </div>
+
+                    <div class="popup__form_block">
+                        <label for="tel" class="popup__form_label">Ваш номер телефона*</label>
+
+                        <input class="popup__form-input _req _number" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" type="tel" id="tel" name="tel" required>
+                        <span class="error" id="tel-error"></span>
+                    </div>
+
+                    <div class="popup__form_block">
+                        <label for="formMessage" class="popup__form_label">Здесь вы можете оставить сообщение или задать
+                            вопрос, который вас интересует*</label>
+
+                        <input class="popup__form-input-text " type="text" id="formText" name="message" required>
+                        <span class="error" id="formText-error"></span>
+                    </div>
+<div class="checkbox">
+                  <input type="checkbox" class="checkbox__input _req" name="agreement" id="agreement" required>
+                <label for="agreement" class="checkbox__label" >Подтверждаю согласие на обработку персональных данных</label>
+                </div>
+                                    <button type="submit" class="btn btn__view_send btn__view_send-invalid">Отправить</button>
+
+                </form>
+
+                <button class="btn btn__view_close" id="btnclose"></button>
+            </div>
+        </popup>
+        <popup class="popup" id="popupconfirm">
+           
+                <div class="popup__confirm">
+
+                    <P class="popup__text"> Спасибо за ваше сообщение! Мы перезвоним вам в ближайшее время</P>
+                </div>
+           <button class="btn btn__view_close" id="btnclose"></button>     
+            </div>
+        </popup>
+    </main>
+
+    </main>
+<footer class="footer">
+    <div class="footer__menu">
+        <ul class="footer__menu_list">
+            <li> Документы </li>
+            <li> Условия оплаты и доставки</li>
+
+        </ul>
+    </div>  
+</footer>
+    <script type="module" src="./Scripts/api.js"></script>
+    <script type="module" src="./Scripts/index.js"></script>
+</body>
+
+</html>
