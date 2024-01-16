@@ -276,10 +276,11 @@
 
   .services__text{
     text-transform: uppercase;
-    max-width: 25%;
+   
     display: flex;
  
     align-items: center;
+    text-align: center;
   }
   .services__paragraph {
     margin: 0;
@@ -340,6 +341,27 @@
     .patients__inspection {
       margin: 20px;
     }
+  }
+
+  @media screen and (max-width: 836px) {
+    .services{
+      margin: 0 20px;
+    }
+    .services__list{
+      display: grid;
+  
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+  
+    }
+
+    .services__item {
+      align-items: center;
+    }
+    
   }
 
   @media screen and (max-width: 699px) {
