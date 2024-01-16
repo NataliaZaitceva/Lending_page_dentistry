@@ -816,14 +816,15 @@ align-items: center;
 .header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0;
+  margin: 10px auto 0 auto;
+  justify-content: center;
 }
 
 .map__info {
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: repeat(4, 1fr);
-grid-column-gap: 7px;
+padding: 0;
+
 grid-row-gap: 2px;
 }
 .map__text{
@@ -925,5 +926,23 @@ grid-row-gap: 2px;
     width: 90%;
     margin: 5px 10px;
   }
+  
+  .map__info_section {
+    display: flex;
+   padding: 0;
+   margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .map__img_geo{
+    width: 15px;
+  }
+
+  .map {
+    display: flex;
+  }
+
   
 }
