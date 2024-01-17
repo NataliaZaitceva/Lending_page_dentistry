@@ -1,0 +1,6 @@
+.patients__item-1 {
+    background-color: aliceblue;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    }

@@ -1,0 +1,22 @@
+.map__text{
+    margin: 15px;
+    justify-content: center;
+    display: flex;
+  }
+
+  @media screen and (max-width: 929px) {
+  
+
+    .map__text {
+      margin: 0 auto;
+    }
+    }
+
+    @media screen and (max-width: 550px) {
+  
+
+        .map__text{
+          font-size: 10px;
+          margin: 5px auto 2px auto;
+        }
+    }

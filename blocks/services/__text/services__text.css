@@ -1,0 +1,31 @@
+.services__text{
+    text-transform: uppercase;
+   
+    display: flex;
+ 
+    align-items: center;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 745px) {
+ 
+    .services__text{
+      font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 629px) {
+ 
+    .services__text{
+      font-size: 14px;
+    }
+    
+    }
+
+    @media screen and (max-width: 550px) {
+  
+
+        .services__text {
+          font-size: 10px;
+        }
+    }

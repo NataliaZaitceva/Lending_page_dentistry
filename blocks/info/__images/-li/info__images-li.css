@@ -1,0 +1,14 @@
+.info__images-li{
+    margin: 5px auto;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  @media screen and (max-width: 929px) {
+  
+    .info__images-li {
+      flex-direction: column;
+      
+    }
+}

@@ -1,0 +1,13 @@
+.patients__inspection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+  }
+
+  @media screen and (max-width: 1110px) {
+
+    .patients__inspection {
+      margin: 20px;
+    }
+  }

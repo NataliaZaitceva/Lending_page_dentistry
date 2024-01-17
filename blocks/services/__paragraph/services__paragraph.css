@@ -1,0 +1,21 @@
+.services__paragraph {
+    margin: 0;
+
+  }
+
+  @media screen and (max-width: 745px) {
+ 
+    .services__paragraph{
+        font-size: 14px;
+        margin: 5px auto 5px 10px;
+      }
+    }
+
+    @media screen and (max-width: 629px) {
+ 
+       
+        .services__paragraph{
+          font-size: 14px;
+        }
+        
+        }

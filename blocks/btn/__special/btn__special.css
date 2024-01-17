@@ -1,0 +1,27 @@
+.btn__special {
+    width: 180px;
+    height: 8vh;
+    margin-top: 10px;
+   
+  }
+
+  
+@media screen and (max-width: 585px) {
+    .btn__special {
+      max-width: 100px;
+      height: 50px;
+    }
+    
+  }
+
+  @media screen and (max-width: 550px) {
+  
+
+    .btn__special {
+      max-width: 180px;
+      height: auto;
+    }
+
+    }
+    
+ 

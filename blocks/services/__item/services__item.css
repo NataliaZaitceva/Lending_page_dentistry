@@ -1,0 +1,26 @@
+.services__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    margin: 10px 10px;
+    padding: 0;
+ justify-self: center;
+
+  }
+
+
+  @media screen and (max-width: 836px) {
+
+    .services__item {
+      align-items: center;
+    }
+    
+  }
+
+  @media screen and (max-width: 490px) {
+   
+    
+    .services__item {
+      width: 90%;
+    }
+}

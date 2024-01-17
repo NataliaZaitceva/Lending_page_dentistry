@@ -1,0 +1,40 @@
+.header__logo {
+    max-width: 150px;
+    height: auto;
+    margin: 0 10px 8px 10px;
+    cursor: pointer;
+    color: #000;
+    z-index: 5;
+    top: -30px;
+    bottom: -40px;
+    position: absolute;
+  cursor: pointer;
+  }
+
+  @media screen and (max-width: 929px) {
+  
+
+    .header__logo {
+      width: 100px;
+      left: 10px;
+      top: 0px;
+      
+    }
+  }
+
+  @media screen and (max-width: 745px) {
+ 
+    .header__logo {
+      width: 35px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+  
+
+    .header__logo {
+      width: 35px;
+    }
+  }
+
+  

@@ -1,0 +1,19 @@
+.services__img {
+    max-width: 150px;
+ 
+     background-color: white;
+     margin: 0 10px;
+     padding: 0;
+   }
+
+   @media screen and (max-width: 745px) {
+    .services__img {
+      max-width: 22%;
+    }
+}
+
+@media screen and (max-width: 629px) {
+    .services__img {
+      max-width: 22%;
+    }
+}

@@ -1,0 +1,17 @@
+.two-columns__main-text {
+    display: flex;
+    width: 40%;
+    min-width: 284px;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 490px) {
+  
+  
+    .two-columns__main-text {
+      width: 100%;
+    }
+    }
+  

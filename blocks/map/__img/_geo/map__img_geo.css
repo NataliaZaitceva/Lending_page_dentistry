@@ -1,0 +1,14 @@
+.map__img_geo {
+    margin: 0 5px auto 0;
+    width: 50px;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 390px) {
+
+  
+    .map__img_geo{
+      width: 15px;
+    }
+      
+  }

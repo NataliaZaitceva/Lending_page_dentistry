@@ -1,0 +1,15 @@
+
+.info__img {
+    max-width: 30%;
+    margin: 20px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 929px) {
+  
+
+    .info__img{
+      max-width: 90%;
+    
+    }
+}

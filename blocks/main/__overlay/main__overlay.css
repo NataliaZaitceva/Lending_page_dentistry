@@ -1,0 +1,40 @@
+.main__overlay {
+    min-height: 38.5vw;
+   max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    background-image: url(/image/img_main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.main__overlay:before {
+ 
+    content: '';
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    background-color: #2A2C2F;
+    position: absolute;
+    z-index: -1;
+    transition: 3s ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.main__overlay:hover::before {
+ 
+    opacity: 0.8;
+}

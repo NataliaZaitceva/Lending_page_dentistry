@@ -1,0 +1,25 @@
+
+.header {
+
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    z-index: 3;
+    position: sticky;
+    
+   
+     }
+   
+     @media screen and (max-width: 550px) {
+  
+  
+        .header {
+          display: flex;
+          flex-direction: column;
+          margin: 10px auto 0 auto;
+          justify-content: center;
+        }
+    }

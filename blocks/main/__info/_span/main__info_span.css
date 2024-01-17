@@ -1,0 +1,19 @@
+.main__info_span {
+    font-size: 90px;
+  }
+
+  @media screen and (max-width: 815px) {
+
+    .main__info_span {
+      font-size: 60px;
+    }
+  }
+
+  
+  @media screen and (max-width: 550px) {
+  
+
+    .main__info_span{
+      font-size: 30px;
+    }
+  }

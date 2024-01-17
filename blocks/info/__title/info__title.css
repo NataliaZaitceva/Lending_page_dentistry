@@ -1,0 +1,11 @@
+.info__title {
+    text-transform: uppercase;
+    
+      }
+
+      @media screen and (max-width: 1226px) {
+  
+        .info__title {
+          margin-left: 20px;
+        }
+    }

@@ -1,0 +1,16 @@
+.header__img {
+    max-width: 38px;
+    height: auto;
+    margin: 0 5px auto auto;
+
+    
+  }
+
+
+  @media screen and (max-width: 550px) {
+
+    .header__img {
+      width: 18px;
+    }
+    
+    }
