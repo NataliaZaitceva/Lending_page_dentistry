@@ -33,7 +33,7 @@
   
 
     .header__logo {
-      width: 35px;
+    display: none;
     }
   }
 

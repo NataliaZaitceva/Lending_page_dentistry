@@ -1,6 +1,7 @@
 @import url(./blocks/about/about.css);
 @import url(./blocks/btn/btn.css);
 @import url(./blocks/btn/__special/btn__special.css);
+@import url(./blocks/btn/__burger/btn__burger.css);
 @import url(./blocks/dot/dot.css);
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);
@@ -67,5 +68,12 @@
 @import url(./blocks/two-columns/__art/two-columns__art.css);
 @import url(./blocks/two-columns/__main-text/two-columns__main-text.css);
 @import url(./blocks/two-columns/__paragraph/two-columns__paragraph.css);
-
-
+@import url(./blocks/burger/burger.css);
+@import url(./blocks/burger/__menu/burger__menu.css);
+@import url(./blocks/burger/__link/burger__link.css);
+@import url(./blocks/btn/__close/btn__close.css);
+@import url(./blocks/header/__logo/header__logo_burger.css);
+@import url(./blocks/line/line.css);
+@import url(./blocks/map/__item/_geo/map__item_geo.css);
+@import url(./blocks/page/__overlay/page__overlay.css);
+@import url(./blocks/overlay/overlay.css);

@@ -1,0 +1,13 @@
+.btn__burger {
+    width: 90px;
+    margin: 5px 10px auto auto;
+    display: flex;
+background-color: transparent;
+    z-index: 10;
+    flex-direction: column;
+}
+
+
+.btn__burger_hidden{
+    display: none;
+}

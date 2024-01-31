@@ -1,0 +1,14 @@
+.burger__link{
+    font-size: 18px;
+text-transform: uppercase;
+margin: 15px 5px;
+cursor: pointer;
+width: 80%;
+text-align: left;
+border-bottom: 2px solid white;
+
+}
+
+.burger__link:hover{
+font-weight: 600;
+}

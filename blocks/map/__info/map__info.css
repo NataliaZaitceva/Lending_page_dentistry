@@ -24,14 +24,12 @@
     }
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 750px) {
   
 
     .map__info {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    margin: 5px;
     padding: 0;
-    
-    grid-row-gap: 2px;
     }
 }

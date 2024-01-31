@@ -1,0 +1,13 @@
+.overlay{
+	display: none;
+	height: auto;
+	left: -15%;
+	position: absolute;
+	top: -50%;
+	width: auto;
+	z-index: 999;
+	}
+
+    .overlay__active {
+        display: flex;
+    }
