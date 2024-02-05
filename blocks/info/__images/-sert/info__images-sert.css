@@ -1,9 +1,7 @@
 .info__images-sert {
     display: flex;
     flex-direction: column;
-    align-self: center;
     margin: 5px auto;
-    align-content: center;
-    justify-content: center;
     list-style: none;
+    position: relative;
   }

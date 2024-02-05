@@ -4,7 +4,12 @@
     margin: 20px;
     cursor: pointer;
   }
-
+  img[scalable]
+  {
+    cursor: pointer;
+    transition-property: max-width, max-height, left, top;
+    transition-duration: 0.3s;
+  }
   @media screen and (max-width: 929px) {
   
 

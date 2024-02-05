@@ -1,26 +1,21 @@
 
 
 
-/*const image = document.querySelector('.info__image')
+const image = document.querySelector('.info__image')
 const popupImage = document.getElementById('#popupImage')
-function openPopup() {
-    document.classList.add('popup_opened');
-    console.log('opened')
-}
 
-function boostImage(){
-    openPopup();
-    image.classList.add('info__img_big')
-}
-
-image.addEventListener('click', openPopup(popupImage))*/
 const imageItems = document.querySelectorAll('.info__img');
 const page = document.querySelector('.page')
 const info = document.querySelector('.info__images')
 
- /*const imgBig = document.createElement('div')
+
+function boostImage() {
+
+
+ const imgBig = document.createElement('div')//создается серый фон, который перекрывает все элементы экрана
     document.getElementsByTagName('body')[0].appendChild(imgBig)
-imgBig.style = 'background-color: rgba(48, 48, 48, 0.6); position: fixed; top: 0px; left: 0px; width: 100%;'
+imgBig.style = 'background-color: rgba(48, 48, 48, 0.6); position: fixed; top: 0px; left: 0px; width: 100%; z-index: 1; position: sticky'
+imgBig.hidden = true;
 
 resizeOverlay()
 
@@ -31,46 +26,44 @@ function resizeOverlay() {
     imgBig.style.height = (document.documentElement.clientHeight + 100) + 'px'
 }
 
-let bigImageScreenFraction = 1.0;
+let bigImageScreenFraction;
 if (window.matchMedia('(max-width: 1080px)').matches)
-{bigImageScreenFraction = 1.0;
+{
+    bigImageScreenFraction = 1.0;
 }
 else 
 {
-    bigImageScreenFraction = 0.7;
+    bigImageScreenFraction = 1.1;
 }
 
+let placeholder = document.createElement('img') //заглушка для картинки
+
+document.querySelectorAll('img[scalable]').forEach((img) => 
+{
+    const smallSize = img.getAttribute('scalable');
+    let defaultStyle = `max-width: ${smallSize}; max-height: ${smallSize}`;
 
 
-imageItems.forEach((image) => image.addEventListener('click', () => {
-   let placeholder = image.getAttribute('scalable');
-   const smallSize = image.getAttribute('scalable');
-let defaultStyle = `max-width: ${smallSize}; max-height: ${smallSize}`
-
-image.style = defaultStyle;
-
+img.style = defaultStyle;
 let isGoingToSmall = false;
-    /*image.classList.toggle('info__img_big')
-    info.classList.toggle('info__images_active')
-
-    if (image.getAttribute('is-big') === 'true')
-    { let coods = placeholder.getBoundingClientRect();
-    image.style = `${defaultStyle}; position: fixed; left: ${coods.left}px; top: ${coords.top}px`;
-    image.setAttribute('is-big', false);
+img.addEventListener('click', () => {
+    if (img.getAttribute('is-big') === 'true') {
+        let coords = placeholder.getBoundingClientRect();
+    img.style = `${defaultStyle}; position: fixed; left: ${coords.left}px; top: ${coords.top}px`;
+    img.setAttribute('is-big', false);
     imgBig.hidden = true;
     isGoingToSmall = true;
     }
-    else 
-    {
+    else {
         imgBig.hidden = false;
-        image.setAttribute('is-big', true);
+        img.setAttribute('is-big', true);
         placeholder.hidden = false;
-        placeholder.style = `width: ${image.width}px; height: ${image.height}px; background-color: rgb(200, 200, 200)`;
-        image.before(placeholder)
-        doImageBig(image)
+        placeholder.style = `width: ${img.width}px; height: ${img.height}px; background-color: rgb(200, 200, 200)`;
+        img.before(placeholder)
+        doImageBig(img)
     }
-}))
-imageItems.forEach((image) => image.addEventListener('transi', () =>{
+});
+   img.addEventListener('transitionend', () =>{
 
     if (isGoingToSmall) //Отследили завершение анимации уменьшения.
       {
@@ -80,13 +73,49 @@ imageItems.forEach((image) => image.addEventListener('transi', () =>{
         //Убираем заглушку.
         placeholder.hidden = true;
       }
-}))
+}); 
+window.addEventListener('resize', () =>
+{
+    if(img.getAttribute('is-big') === 'true') doImageBig (img)
+})
+})
 
-const imageItemsSert = document.querySelectorAll('.info__sert');
+/*imageItems.forEach((image) => image.addEventListener('click', () => {
 
-imageItemsSert.forEach((imageSert) => imageSert.addEventListener('click', () => {
-    imageSert.classList.toggle('info__sert_big')
+/*image.classList.toggle('info__img_big')
+    info.classList.toggle('info__images_active')
+
 }))*/
+
+
+
+
+
+function doImageBig(img){
+    let screenHeight = document.documentElement.clientHeight;
+    let screenWidth = document.documentElement.clientWidth;
+    let imgWidth = img.width;
+    let imgHeight = img.height;
+    let bigImgHeight = Math.round(screenHeight * bigImageScreenFraction);
+    let bigImgWidth = Math.round(screenWidth * bigImageScreenFraction);
+    let ratio = imgWidth / imgHeight
+    let newWidth = Math.round(bigImgHeight * ratio);
+    if (newWidth < bigImgWidth)
+    {
+      bigImgWidth = newWidth;
+    }
+    else
+    {
+      bigImgHeight = Math.round(bigImgWidth / ratio);
+    }
+    let left = Math.round(0.5 * (screenWidth - bigImgWidth));
+    let top = Math.round(0.5 * (screenHeight - bigImgHeight));
+    img.style = `max-width: ${bigImgWidth}px; max-height: ${bigImgHeight}px; left: ${left}px; top: ${top}px; position: fixed; z-index: 2`;
+};
+} 
+boostImage();
+
+
 
 
 const burgerBtn = document.querySelector('.btn__burger')
@@ -108,17 +137,3 @@ btnBurgerClose.addEventListener('click', () => {
 
 })
 
-const popup = document.querySelector('.popup')
-
-function openPopupImage (name) {
-    btn
-}
-
-
-
-imgBig.hidden = true;
-function fillBig() {
-    
-}
-
-window.addEventListener
