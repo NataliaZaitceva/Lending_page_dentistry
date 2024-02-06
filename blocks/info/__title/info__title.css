@@ -9,3 +9,10 @@
           margin-left: 20px;
         }
     }
+
+    @media screen and (max-width: 546px) {
+  
+      .info__title {
+       margin-top: 80px;
+      }
+  }

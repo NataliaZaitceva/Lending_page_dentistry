@@ -18,3 +18,25 @@
 
     }
 }
+
+@media screen and (max-width: 600px) {
+  
+
+  .info__img{
+    max-width: 90vw;
+    margin: 5px 0;
+    align-items: center;
+    cursor: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  
+
+  .info__img{
+    max-width: 80vw;
+    margin: 5px 0;
+    align-items: center;
+    cursor: none;
+  }
+}

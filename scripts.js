@@ -9,6 +9,7 @@ const page = document.querySelector('.page')
 const info = document.querySelector('.info__images')
 
 
+
 function boostImage() {
 
 
@@ -27,10 +28,11 @@ function resizeOverlay() {
 }
 
 let bigImageScreenFraction;
-if (window.matchMedia('(max-width: 1080px)').matches)
+if (window.matchMedia('(max-width: 900px)').matches)
 {
-    bigImageScreenFraction = 1.0;
+    bigImageScreenFraction = 0.7;
 }
+
 else 
 {
     bigImageScreenFraction = 1.1;
@@ -113,9 +115,16 @@ function doImageBig(img){
     img.style = `max-width: ${bigImgWidth}px; max-height: ${bigImgHeight}px; left: ${left}px; top: ${top}px; position: fixed; z-index: 2`;
 };
 } 
-boostImage();
 
 
+
+
+  
+    
+if (document.documentElement.clientWidth > 600) {    
+    boostImage()
+  } 
+  else {}
 
 
 const burgerBtn = document.querySelector('.btn__burger')
