@@ -13,4 +13,11 @@
     .patients {
      margin: 20px;
     }
+  }
+    @media screen and (max-width: 580px) {
+  
+
+      .patients {
+       margin-top: 60px;
+      }
 }
